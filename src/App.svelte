@@ -5,6 +5,7 @@
     import IntroSlides from "./IntroSlides.svelte";
     import Location from "./Location.svelte";
     import Menu from "./Menu.svelte";
+    import Login from "./Login.svelte";
 
 </script>
 
@@ -19,9 +20,11 @@
                 <Location/>
             {:else if $currentView === "menu"}
                 <Menu/>
+            {:else if $currentView === "login"}
+                <Login/>
             {/if}
         </main>
-        {#if $currentView !== "location"}
+        {#if $currentView !== "location" && $currentView !== "login"}
             <header>
                 <Header/>
             </header>

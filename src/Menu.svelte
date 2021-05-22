@@ -7,6 +7,7 @@
             {name: "combo 1", picture: "https://via.placeholder.com/64"},
             {name: "combo 2", picture: "https://via.placeholder.com/64"},
             {name: "combo 3", picture: "https://via.placeholder.com/64"},
+            {name: "combo 4", picture: "https://via.placeholder.com/64"},
         ],
         "afternoon":
             [

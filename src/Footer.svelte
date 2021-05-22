@@ -1,5 +1,6 @@
 <script>
     import {currentCombo} from "./currentCombo";
+    import {currentView} from "./currentView";
 </script>
 
 <div>
@@ -17,7 +18,7 @@
     {/if}
 </div>
 <div style="border-radius: 5px;color: white">
-    <button style="background: red">ĐÃ MUA</button>
+    <button style="background: red" on:click={() => $currentView="login"}>ĐÃ MUA</button>
 </div>
 
 <style>
