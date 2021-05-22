@@ -1,4 +1,6 @@
 <script>
+    import {currentView} from "./currentView";
+
     let register = false
 </script>
 
@@ -30,7 +32,7 @@
 
         {/if}
         {#if !register}
-            <button class="full-width">ĐĂNG NHẬP</button>
+            <button class="full-width" on:click={() => $currentView = "dashboard"}>ĐĂNG NHẬP</button>
             <div>
                 Chưa có tài khoản? <a href="#" on:click={() => register = true}>Đăng kí</a>
             </div>

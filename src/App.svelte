@@ -6,6 +6,7 @@
     import Location from "./Location.svelte";
     import Menu from "./Menu.svelte";
     import Login from "./Login.svelte";
+    import Dashboard from "./Dashboard.svelte";
 
 </script>
 
@@ -22,9 +23,11 @@
                 <Menu/>
             {:else if $currentView === "login"}
                 <Login/>
+            {:else if $currentView === "dashboard"}
+                <Dashboard/>
             {/if}
         </main>
-        {#if $currentView !== "location" && $currentView !== "login"}
+        {#if $currentView !== "location" && $currentView !== "login" && $currentView !== "dashboard"}
             <header>
                 <Header/>
             </header>
