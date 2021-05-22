@@ -85,7 +85,8 @@
     <section>
         <h3>Thực đơn {$currentMenu}</h3>
         {#each menu[$currentMenu] as item}
-            <div style="margin-bottom: 0.5rem" on:click={() => $currentCombo = item.name}>
+            <div style="margin-bottom: 0.5rem; border: {$currentCombo === item.name ? '1px solid black' : 'none'}"
+                 on:click={() => $currentCombo = item.name}>
                 <div>
                     <img src={item.picture}/>
                 </div>
