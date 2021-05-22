@@ -1,4 +1,6 @@
 <script>
+    import {currentView} from "./currentView";
+
     let selected = ""
 </script>
 
@@ -19,6 +21,6 @@
 </section>
 <section>
     {#if selected}
-        <button class="full-width">TIẾP TỤC</button>
+        <button class="full-width" on:click={() => $currentView = "menu"}>TIẾP TỤC</button>
     {/if}
 </section>

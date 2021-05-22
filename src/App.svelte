@@ -4,6 +4,7 @@
     import {currentView} from "./currentView";
     import IntroSlides from "./IntroSlides.svelte";
     import Location from "./Location.svelte";
+    import Menu from "./Menu.svelte";
 
 </script>
 
@@ -16,6 +17,8 @@
         <main>
             {#if $currentView === "location"}
                 <Location/>
+            {:else if $currentView === "menu"}
+                <Menu/>
             {/if}
         </main>
         {#if $currentView !== "location"}
@@ -56,19 +59,25 @@
 
     .view > header {
         order: -1;
-        flex: 0 48px;
+        flex: 0 40px;
+        display: flex;
     }
 
     .view > footer {
         order: 1;
         flex: 0 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid black;
     }
 
     .view > main {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        padding: 1.5rem;
+        justify-content: flex-start;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .view > main > * {
