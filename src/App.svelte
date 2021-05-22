@@ -59,13 +59,13 @@
 
     .view > header {
         order: -1;
-        flex: 0 40px;
+        flex: 0 20px;
         display: flex;
     }
 
     .view > footer {
         order: 1;
-        flex: 0 64px;
+        flex: 0 16px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -75,7 +75,7 @@
     .view > main {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-between;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }

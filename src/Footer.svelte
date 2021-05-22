@@ -1,3 +1,7 @@
+<script>
+    import {currentCombo} from "./currentCombo";
+</script>
+
 <div>
     <svg style="width: auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
         <path fill="none" d="M0 0h24v24H0z"/>
@@ -6,7 +10,11 @@
     </svg>
 </div>
 <div style="border-bottom: 2px dashed black;justify-self: stretch;flex-grow: 1">
-    0
+    {#if $currentCombo}
+        {$currentCombo}
+    {:else }
+        &nbsp;
+    {/if}
 </div>
 <div style="border-radius: 5px;color: white">
     <button style="background: red">ĐÃ MUA</button>

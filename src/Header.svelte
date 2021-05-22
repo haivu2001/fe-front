@@ -1,4 +1,14 @@
-<div class="box">
+<script>
+    import MenuChooser from "./MenuChooser.svelte";
+
+    let showChooser = false
+</script>
+
+{#if showChooser}
+    <MenuChooser on:selected={() => showChooser = false}/>
+{/if}
+
+<div class="box" on:click={()=> showChooser = true}>
     <div>MENU</div>
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-menu-button"
          viewBox="0 0 16 16">

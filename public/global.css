@@ -45,6 +45,15 @@ button {
     margin-bottom: 1rem;
 }
 
+input {
+    font-family: Verdana, sans-serif;
+    margin: 1rem auto;
+    width: 100%;
+    border: 2px solid darkcyan;
+    border-radius: 5px;
+    padding: .6rem;
+}
+
 .full-width {
     display: block;
     width: 100%;
