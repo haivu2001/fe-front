@@ -1,3 +1,3 @@
 import {writable} from "svelte/store";
 
-export const currentView = writable("login")
+export const currentView = writable("intro")
